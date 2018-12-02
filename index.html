@@ -8,7 +8,41 @@
 </head>
 <body>
     <h1 id="title">Survey Form</h1>
-    
+
+    <p id="description">This is the description for the survey form.</p>
+
+    <form action="" id="survey-form">
+
+        <label for="name" id="name-label">Name</label>
+        <label for="email" id="email-label">Email</label>
+        <label for="number" id="number-label">Rating</label>
+
+        <input type="name" required id="name" placeholder="Your Name">
+        <input type="email" required id="email" placeholder="Your Email">
+        <input type="number" required id="number" min="1" max="5" placeholder="Rate 1 to 5 ">
+
+        <select name="Options" id="dropdown">
+            <option value="Option 1" id="dropdown">Option 1</option>
+            <option value="Option 2" id="dropdown">Option 2</option>
+        </select>
+
+        <fieldset>
+            <legend>Do you like this?</legend>
+            <input type="radio" name="yes-no" value="yes">Yes
+            <input type="radio" name="yes-no" value="no">No
+
+        </fieldset>
+
+        <input type="checkbox" value="Option1">Option 1
+        <input type="checkbox" value="Option2">Option 2
+        <input type="checkbox" value="Option3">Option 3
+
+        <textarea name="comments" id="comments" cols="30" rows="10">Additional Comments:</textarea>
+
+        <button type="submit" id="submit">Submit</button>
+
+
+    </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
