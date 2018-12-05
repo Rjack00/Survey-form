@@ -4,46 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Survey Form</title>
 </head>
-<body>
-    <h1 id="title">Survey Form</h1>
 
-    <p id="description">This is the description for the survey form.</p>
+    <body>
+        <h1 id="title">mock-survey form</h1>
 
-    <form action="" id="survey-form">
+        <p id="description">This is a mock-survey form I created using HTML & CSS.</p>
+        <div class="container">
+            <form action="" id="survey-form">
+                <p class="please">Please test the elements below.</p>
+               
+                <hr class="hr1">
+                <div class="personal-info">
+                    <label for="name" id="name-label">Name: </label>
+                    <input type="name" required id="name" placeholder="Your name here...">
 
-        <label for="name" id="name-label">Name</label>
-        <label for="email" id="email-label">Email</label>
-        <label for="number" id="number-label">Rating</label>
+                    <label for="email" id="email-label">Email: </label>
+                    <input type="email" required id="email" placeholder="Your email here...">
+                </div>
+                <div class="rate">
+                    <label for="number" id="number-label">Rate this mock-survey 1-5 (5 is best rating):  </label>
+                    <input type="number" required id="number" min="1" max="5" placeholder="Rate">
+                </div>
+                
+                <select name="Options" id="dropdown">
+                    <option value="Option 1" id="dropdown">Dropdown Option 1</option>
+                    <option value="Option 2" id="dropdown">Dropdown Option 2</option>
+                    <option value="Option 2" id="dropdown">Dropdown Option 3</option>
+                </select>
 
-        <input type="name" required id="name" placeholder="Your Name">
-        <input type="email" required id="email" placeholder="Your Email">
-        <input type="number" required id="number" min="1" max="5" placeholder="Rate 1 to 5 ">
+                <fieldset>
+                    <legend>Do you like this mock-servey?</legend>
+                    <div class="radios">
+                        <input id="yes" type="radio" name="yes-no" value="yes">Yes
+                        <input id="kinda" type="radio" name="yes-no" value="kinda">Kinda
+                        <input id="maybe" type="radio" name="yes-no" value="maybe">Maybe
+                        <input id="not-really" type="radio" name="yes-no" value="not-really">Not really
+                        <input id="no" type="radio" name="yes-no" value="no">No
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Please check all that apply:</legend>
+                    <input type="checkbox" value="Option1">Option 1
+                    <input type="checkbox" value="Option2">Option 2
+                    <input type="checkbox" value="Option3">Option 3
+                </fieldset>
 
-        <select name="Options" id="dropdown">
-            <option value="Option 1" id="dropdown">Option 1</option>
-            <option value="Option 2" id="dropdown">Option 2</option>
-        </select>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Additional Comments:"></textarea>
 
-        <fieldset>
-            <legend>Do you like this?</legend>
-            <input type="radio" name="yes-no" value="yes">Yes
-            <input type="radio" name="yes-no" value="no">No
-
-        </fieldset>
-
-        <input type="checkbox" value="Option1">Option 1
-        <input type="checkbox" value="Option2">Option 2
-        <input type="checkbox" value="Option3">Option 3
-
-        <textarea name="comments" id="comments" cols="30" rows="10">Additional Comments:</textarea>
-
-        <button type="submit" id="submit">Submit</button>
-
-
-    </form>
-
+                <button type="submit" id="submit">Submit</button>
+                <hr class="hr2">
+                <p class="thank">Thank you!</p>
+            </form>
+        </div>
+    
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+    </body>
+
 </html>

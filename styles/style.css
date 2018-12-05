@@ -1,0 +1,76 @@
+.container {
+    width: 50%;
+    background: rgb(248, 246, 246);
+    padding: 10px 0 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(14, 13, 13);
+}
+.please {
+    bottom: 0px;
+}
+hr {
+    width: 75%;
+}
+.hr1 {
+    margin-top: 10px;
+}
+.hr2 {
+    margin-top: 50px;
+}
+h1 {
+    margin: 40px auto;
+    text-transform: uppercase;
+}
+p {
+    margin: 40px auto;
+}
+* {
+    margin: 10px auto;
+    text-align: center;
+}
+body {
+   
+    text-align: center;
+}
+.personal-info input {
+   
+    margin: 30px 0 30px 0;
+}
+
+textarea {
+    display: block;
+    margin: 30px auto;
+}
+#submit {
+    display: block;
+    width: 25%;
+    height: 40px;
+    font-size: 100%;
+}
+#submit:hover {
+    transform: scale(1.5);
+}
+#dropdown {
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+fieldset{
+    margin: 30px 10%;
+    padding-right: 3%;
+}
+fieldset input {
+    margin-left: 5%;
+}
+input[type="radio"]:hover {
+    transform: scale(1.5);
+}
+input[type="checkbox"]:hover {
+    transform: scale(1.5);
+}
+label[for="email"] {
+    margin-left: 20px;
+}
+.thank {
+    font-size: 150%;
+}
